@@ -11,12 +11,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Logger\\": "src"
+            "ConsoleLogger\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Logger\\Test\\": "tests",
+            "ConsoleLogger\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
     }

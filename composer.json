@@ -1,5 +1,5 @@
 {
-    "name": "fabcam/ConsoleLogger",
+    "name": "fabcam/console-logger",
     "description": "Console Logger plugin for CakePHP",
     "type": "cakephp-plugin",
     "license": "MIT",

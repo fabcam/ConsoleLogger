@@ -5,6 +5,9 @@ use Cake\Log\Engine\ConsoleLog;
 use Cake\Console\ConsoleOutput;
 use Cake\Utility\Text;
 
+use Cake\Core\Configure;
+use Cake\Core\Configure\Engine\PhpConfig;
+
 class Logger
 {
     //////////////////////////////////////
@@ -16,7 +19,11 @@ class Logger
       if($level == null){
         $level = 'annoy';
       }
-      Self::GetLogger()->log($level, $message, []);
+      
+      if(Configure::read('debug'))
+      {
+        Self::GetLogger()->log($level, $message, []);
+      }
     }
 
     private static function GetLogger(){

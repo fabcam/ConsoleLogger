@@ -59,6 +59,13 @@ Instead of using Cake's Http Client do:
 use ConsoleLogger\Http\Client;
 ```
 
+A behavior is also included in oder to log every query that is executed in the BeforeFind callback.
+In order to use it just add the following line to the desired Table:
+
+```
+$this->addBehavior('ConsoleLogger.Log')
+```
+
 ## Installation
 
 You can install this plugin into your CakePHP application using [composer](http://getcomposer.org).
